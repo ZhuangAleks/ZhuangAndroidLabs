@@ -7,17 +7,23 @@
 
     </data>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-         android:id="@+id/frame_layout"
-        tools:context=".MainActivity">
+        android:orientation="horizontal"
+        tools:context=".MainActivity"
+        android:baselineAligned="false">
+
+
 
         <ListView
             android:id="@+id/lv_data"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="match_parent" />
-
-    </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </layout>
